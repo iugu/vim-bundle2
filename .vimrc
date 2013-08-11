@@ -112,3 +112,5 @@ let g:SuperTabLongestEnhanced = 1
 " let g:vimshell_right_prompt = 'vimshell#vcs#info("(%s)-[%b]", "(%s)-[%b|%a]")'
 let g:vimshell_enable_smart_case = 1
 let g:vimshell_prompt = $USER."% "
+
+set tags=./tags;
