@@ -66,10 +66,11 @@ let g:TailMinusF_Center_Win = 1
 set stl=%f\ %h\ %m\ %r\ %{fugitive#statusline()}%=\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]
 
 " NERD TREE MAP
+nnoremap <leader>m <Plug>TaskList :TaskList<CR>
 noremap <leader>t :NERDTreeToggle<CR>
 set hlsearch
 let NERDTreeWinPos='left'
-let NERDTreeWinSize=40
+let NERDTreeWinSize=30
 
 " Hidden characters
 nmap <leader>l :set list!<CR>
@@ -104,3 +105,10 @@ let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
 let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 let g:SuperTabContextDiscoverDiscovery =  ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 let g:SuperTabLongestEnhanced = 1
+
+" let g:vimshell_no_default_keymappings = 1
+
+" let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
+" let g:vimshell_right_prompt = 'vimshell#vcs#info("(%s)-[%b]", "(%s)-[%b|%a]")'
+let g:vimshell_enable_smart_case = 1
+let g:vimshell_prompt = $USER."% "
